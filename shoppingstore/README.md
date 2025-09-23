@@ -1,5 +1,6 @@
 # Responsive Shopping page
 This is how the Shopping page should look like for mobile/tablet
+When in mobile mode:
 1. Add a new checkbox at the top right corner and when selected change the background color.  
 
 
