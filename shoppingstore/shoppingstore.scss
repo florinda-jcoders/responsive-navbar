@@ -1,0 +1,48 @@
+$background-color_1: rgb(200, 142, 254);
+$background-color_2: #fff;
+
+.container {
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .item-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $background-color_1;
+        width: 300px;
+        height: auto;
+        margin: 16px;
+        padding: 16px;
+        border-radius: 16px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .main-item {
+        width: 60%;
+        margin: 0 auto;
+        object-fit: contain;
+        background: none;
+        border-radius: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .item-heading {
+        text-transform: capitalize;
+    }
+
+    .item-description {
+        margin: 8px 0;
+        font-size: 15px;
+        font-weight: 200;
+    }
+}
