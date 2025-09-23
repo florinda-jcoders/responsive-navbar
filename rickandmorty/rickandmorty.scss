@@ -1,0 +1,39 @@
+.parent {
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .avatar {
+        margin-left: 20%;
+        margin-top: -10%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .character-card {
+        justify-items: center;
+        width: 262px;
+        height: 385px;
+        margin: 10%;
+        border-radius: 15px;
+        background-color: #0d7c85;
+        border: 4px solid#EBFF6E;
+
+        p {
+            padding: 8px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .parent {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+    }
+}
