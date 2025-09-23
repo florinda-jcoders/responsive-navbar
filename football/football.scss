@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .player-card {
+        position: relative;
+        height: 350px;
+        justify-content: center;
+        width: 450px;
+        border-radius: 20px;    
+        background: linear-gradient(to right, #bc4e9c, #f80759);
+
+        img {
+            position: absolute;
+            width: 60%;
+            bottom: 0;
+            right: 0;
+            object-fit: contain;
+            background: none;
+            border-radius: 0;
+        }
+    }
+
+    .footballer-name {
+        font-weight: 700;
+        font-size: 38px;
+        position: absolute;
+        top: 15px;
+        left: 50px;
+        text-decoration: none;
+    }
+
+    .footballer-num {
+        position: absolute;
+        font-weight: 700;
+        font-size: 160px;
+        top: 50px;
+        left: 50px;
+        text-decoration: none;
+    }
+}
